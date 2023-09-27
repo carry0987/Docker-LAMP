@@ -19,6 +19,7 @@ RUN apt-get install -y \
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 4f4ea0aae5267a6c
 RUN add-apt-repository ppa:ondrej/php
 RUN apt-get update && apt-get install -y \
+   curl \
    apache2 \
    php${php_version} \
    libapache2-mod-php${php_version} \
